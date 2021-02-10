@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  app-name:
+    build:
+      context: .
+    image: laptopsearch:$VERSION
+    container_name: laptopsearch
+    ports:
+      - "8051:8051"
+    environment:
+      - TARGET=$TARGET
+    restart: unless-stopped
