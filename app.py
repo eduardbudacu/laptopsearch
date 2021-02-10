@@ -75,6 +75,8 @@ def create_model(data):
 
     feature_array = np.array(feature_names)
     print(dense.shape)
+
+    #demosntrate a search
     #search = vectorizer.transform(['Legion']).todense()
 
     #res = np.dot(dense, search[0].transpose())
