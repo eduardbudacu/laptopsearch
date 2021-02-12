@@ -169,4 +169,5 @@ if __name__ == "__main__":
         else:
             return "Click to select"
     port = int(os.environ.get("PORT", 8051))
+    print(port)
     app.run_server(debug=False, host='0.0.0.0', port=port)
