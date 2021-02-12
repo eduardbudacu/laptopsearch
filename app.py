@@ -1,3 +1,4 @@
+import os
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
@@ -167,5 +168,5 @@ if __name__ == "__main__":
             return [html.H3(clickData['points'][0]['customdata'][0]), html.Img(src="{data}".format(data=clickData['points'][0]['customdata'][3]), width=360)]
         else:
             return "Click to select"
-
-    app.run_server(debug=False, host='0.0.0.0', port='8051')
+    port = int(os.environ.get("PORT", 8051))
+    app.run_server(debug=False, host='0.0.0.0', port=port)

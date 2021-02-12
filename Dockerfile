@@ -8,6 +8,6 @@ RUN pip install -r /requirements.txt
 
 COPY ./ ./
 
-EXPOSE 8051
+EXPOSE $PORT
 
 CMD ["python", "./app.py", "2021-02-06"]
