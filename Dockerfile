@@ -10,4 +10,4 @@ COPY ./ ./
 
 EXPOSE $PORT
 
-CMD ["python", "./app.py", "2021-02-06"]
+CMD ["python", "./app.py", "2021-02-13"]

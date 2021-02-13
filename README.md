@@ -8,4 +8,23 @@ The data is scraped using the browser extension https://webscraper.io/
 
 ![Dashboard](./docs/screenshot.png)
 
+## Deployment on heroku
 
+
+1. Build container
+
+```
+heroku container:push web -a laptopsearchro
+```
+
+2. Release
+
+```
+heroku container:release web -a laptopsearchro
+```
+
+3. Check logs 
+
+```
+heroku logs --tail -a laptopsearchro
+```
