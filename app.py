@@ -23,6 +23,8 @@ import sys
 
 DATE = sys.argv[1]
 
+print(DATE)
+
 itgalaxy = pd.read_csv('data/' + DATE + '/itgalaxy.csv')
 itgalaxy['price'] = itgalaxy['price'].apply(lambda x: float(x.replace('.', '').replace(',','.').replace(' lei', '')))
 itgalaxy['provider'] = 'itgalaxy'
